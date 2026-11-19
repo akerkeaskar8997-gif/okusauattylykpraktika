@@ -337,6 +337,8 @@ body.present .num{display:none}
   .mbox .bigqr{width:100%;max-width:340px;margin:0 auto}
 }
 
+.arg.a3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:860px){.arg.a3{grid-template-columns:1fr}}
 /* ---------- 8 әдіс ---------- */
 .mgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .mth{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:start;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:14px;padding:18px 20px;box-shadow:var(--sh)}
@@ -564,11 +566,11 @@ body.q .foot{padding:24px 16px}
       <div class="mth"><span class="no">03</span><h3>Оқырман навигаторы</h3><p>Мәтін құрылымында бағдарлап, қажетті ақпаратқа жол табу.</p></div>
       <div class="mth tl"><span class="no">04</span><h3>Фактчек</h3><p>Ақпараттың сенімділігін тексеріп, дерек пен пікірді ажырату.</p></div>
       <div class="mth"><span class="no">05</span><h3>Мәтіннің цифрлық егізі</h3><p>Оқылған мәтінді инфографика, карта немесе цифрлық өнімге айналдыру.</p></div>
-      <div class="mth tl"><span class="no">06</span><h3>Оқылымнан – подкастқа</h3><p>Мәтін мазмұнын өз сөзімен түсіндіріп, аудио форматта ұсыну.</p></div>
-      <div class="mth new"><span class="no">07</span><h3>Оқиға пирамидасы <a class="pr" href="#task-1">Тапсырма</a></h3><p>Мәтіндегі ақпаратты бес тірек сұрақ бойынша жүйелеу: кім? қайда? қашан? неге? немен аяқталды?</p></div>
-      <div class="mth tl"><span class="no">08</span><h3>Мәтінге жаңа көзқарас</h3><p>Оқиға желісін немесе кейіпкер әрекетін өзгертіп, жаңа нұсқаның негізгі ойын анықтау.</p></div>
+      <div class="mth tl new"><span class="no">06</span><h3>Оқылымнан – подкастқа <a class="pr" href="#task-3">3-топ</a></h3><p>Мәтін мазмұнын өз сөзімен түсіндіріп, аудио форматта ұсыну.</p></div>
+      <div class="mth new"><span class="no">07</span><h3>Оқиға пирамидасы <a class="pr" href="#task-1">1-топ</a></h3><p>Мәтіндегі ақпаратты бес тірек сұрақ бойынша жүйелеу: кім? қайда? қашан? неге? немен аяқталды?</p></div>
+      <div class="mth tl new"><span class="no">08</span><h3>Мәтінге жаңа көзқарас <a class="pr" href="#task-2">2-топ</a></h3><p>Оқиға желісін немесе кейіпкер әрекетін өзгертіп, жаңа нұсқаның негізгі ойын анықтау.</p></div>
     </div>
-    <div class="note soft"><span>💡</span><div><b>07 «Оқиға пирамидасы»</b> әдісін практикумда «Желтоқсан оқиғасы» мәтіні бойынша орындаймыз.</div></div>
+    <div class="note soft"><span>💡</span><div>Практикумда <b>07</b>, <b>08</b> және <b>06</b> әдістерін үш топ үш мәтін бойынша орындайды.</div></div>
   </div>
 </section>
 
@@ -599,57 +601,77 @@ body.q .foot{padding:24px 16px}
 </section>
 
 <!-- 10 -->
-<section class="sec" id="goals" data-art="goals" data-nav="Практикумның мақсаты" data-g="ІІ бөлім · Практикум">
+<section class="sec" id="goals" data-art="goals" data-nav="Топтық жұмыс: 3 мәтін" data-g="ІІ бөлім · Практикум">
   <div class="wrap">
     <span class="kicker">Практикумның мақсаты</span>
-    <h2>Бір мәтін – бес оқу әрекеті</h2>
-    <p class="lead">Қатысушылар тапсырмаларды орындау арқылы оқу сауаттылығының әр қадамын тәжірибеде байқайды.</p>
-    <div class="grid g5">
-      <div class="card"><div class="ico t-teal">1</div><h3>АҚПАРАТТЫ ТАБУ</h3><p>Мәтіннен нақты деректі анықтау.</p></div>
-      <div class="card"><div class="ico t-ink">2</div><h3>ЖҮЙЕЛЕУ</h3><p>Оқиға желісін ретімен құрастыру.</p></div>
-      <div class="card"><div class="ico t-gold">3</div><h3>ИНТЕРПРЕТАЦИЯ</h3><p>Мәтіндегі себеп-салдар байланысын анықтау.</p></div>
-      <div class="card"><div class="ico t-rose">4</div><h3>ДӘЛЕЛДЕУ</h3><p>Пікірді мәтінге сүйеніп негіздеу.</p></div>
-      <div class="card"><div class="ico t-green">5</div><h3>ҚОЛДАНУ</h3><p>Оқығанын өмірлік жағдаятпен байланыстыру.</p></div>
+    <h2>Үш топ – үш мәтін – үш оқу әрекеті</h2>
+    <p class="lead">Әр топ өз мәтінімен жұмыс істеп, оқу сауаттылығының бір әрекетін тәжірибеде көрсетеді.</p>
+    <div class="grid g3">
+      <a class="card" href="#task-1" style="text-decoration:none;color:inherit"><div class="ico t-teal">1</div><h3>1-ТОП • ЖҮЙЕЛЕУ</h3><p><b>Мәтін:</b> «Ана тілі»<br><b>Әдіс:</b> «Оқиға пирамидасы»</p><p style="margin-top:8px">Мәтіндегі ақпаратты бес тірек сұрақ арқылы ретімен құрастыру.</p></a>
+      <a class="card" href="#task-2" style="text-decoration:none;color:inherit"><div class="ico t-gold">2</div><h3>2-ТОП • ИНТЕРПРЕТАЦИЯ</h3><p><b>Мәтін:</b> 2-мәтін<br><b>Әдіс:</b> «Мәтінге жаңа көзқарас»</p><p style="margin-top:8px">Мәтінді жаңа қырынан түсіндіріп, негізгі ойдың өзгерісін анықтау.</p></a>
+      <a class="card" href="#task-3" style="text-decoration:none;color:inherit"><div class="ico t-rose">3</div><h3>3-ТОП • ҚОЛДАНУ</h3><p><b>Мәтін:</b> 3-мәтін<br><b>Әдіс:</b> «Оқылымнан – подкастқа»</p><p style="margin-top:8px">Оқығанын өмірлік жағдаятпен байланыстырып, қысқа подкаст мәтінін құру.</p></a>
     </div>
+    <div class="chain"><span>Оқы</span><i>→</i><span>Жүйеле</span><i>→</i><span>Түсіндір</span><i>→</i><span>Қолдан</span><i>→</i><span>Таныстыр</span></div>
   </div>
 </section>
 
-<!-- 11 -->
-<section class="sec" id="text" data-art="texts" data-nav="Ортақ мәтін" data-g="ІІ бөлім · Практикум" data-qr="Ортақ мәтін: «1986 жылғы Желтоқсан оқиғасы»">
-  <div class="wrap">
-    <div class="task-head">
-      <div><span class="kicker">Ортақ мәтін</span><h2>«1986 жылғы Желтоқсан оқиғасы»</h2><p class="lead" style="margin:0">Келесі тапсырмалар осы мәтінге сүйенеді.</p></div>
-      <div class="qrslot"></div>
-    </div>
-    <div class="reading hl-able" style="font-size:clamp(17px,1.45vw,21px)">
-      <p style="margin:0 0 14px"><span class="s">1986 жылғы 16 желтоқсанда Қазақстан Компартиясы Орталық Комитетінің пленумында Дінмұхамед Қонаев қызметінен босатылып, оның орнына Геннадий Колбин тағайындалды.</span> <span class="s">Бұл шешім республика жұртшылығының пікірімен санаспай қабылданды.</span></p>
-      <p style="margin:0 0 14px"><span class="s">17 желтоқсан күні Алматыдағы Брежнев атындағы алаңға студенттер мен жұмысшы жастар жиналды.</span> <span class="s">Олар республика басшылығына қатысты шешімнің әділ түсіндірілуін, ұлттық теңдік пен жергілікті халықтың мүддесінің ескерілуін талап етті.</span></p>
-      <p style="margin:0 0 14px"><span class="s">Бейбіт басталған наразылықты билік күш қолдану арқылы таратты.</span> <span class="s">17–18 желтоқсанда алаңға әскер мен милиция күштері жұмылдырылып, шеруге қатысушылар ұсталды.</span> <span class="s">Кейін көптеген жастар оқудан шығарылып, жұмыстан босатылды және жауапқа тартылды.</span></p>
-      <p style="margin:0"><span class="s">Уақыт өте келе Желтоқсан оқиғасының тарихи маңызы қайта бағаланды.</span> <span class="s">Ол кеңестік әміршіл жүйеге қарсы қоғамдық қарсылықтың көрінісі әрі Қазақстанның тәуелсіздікке ұмтылу тарихындағы маңызды кезең ретінде танылды.</span></p>
-    </div>
-    <p class="hint">Сөйлемді басып, маңызды ақпаратты белгілеуге болады.</p>
-    <div class="note soft"><span>🤔</span><div>Оқып болған соң: <b>«Мәтінде не айтылды?»</b> деген сұрақпен шектелмеңіз. <b>«Қандай ақпаратты қалай қолданамын?»</b> деп ойланыңыз.</div></div>
-  </div>
-</section>
 
 
 <!-- 13 -->
-<section class="sec" id="task-1" data-nav="Тапсырма: Оқиға пирамидасы" data-g="ІІ бөлім · Практикум" data-qr="Тапсырма: «Оқиға пирамидасы»">
+<section class="sec" id="task-1" data-art="texts" data-nav="1-топ: Оқиға пирамидасы" data-g="ІІ бөлім · Практикум" data-qr="1-топ: «Ана тілі» · «Оқиға пирамидасы»">
   <div class="wrap">
     <div class="task-head">
-      <div><span class="kicker">Тапсырма • Ақпаратты жүйелеу</span><h2>«Оқиға пирамидасы»</h2>
-      <p class="lead" style="margin:0">Желтоқсан оқиғасы туралы мәтіндегі ақпаратты бес тірек сұрақ арқылы жүйелеңіз.</p></div>
+      <div><span class="kicker">1-топ • Ақпаратты жүйелеу</span><h2>«Ана тілі» · «Оқиға пирамидасы»</h2>
+      <p class="lead" style="margin:0">Мәтінді оқып, ондағы ақпаратты бес тірек сұрақ арқылы жүйелеңіз.</p></div>
       <div class="qrslot"></div>
     </div>
+    <div class="reading hl-able" style="font-size:clamp(17px,1.4vw,20px);margin-bottom:26px">
+      <p style="margin:0 0 6px;font-family:var(--fd);font-size:18px">Ана тілі</p>
+      <p style="margin:0 0 12px"><span class="s">Ана тілі – атаның, ананың тілі, туған халқының тілі.</span> <span class="s">Ана тілі біз кішкентай кезімізден әке-шешемізге, әжеміз бен атамызға, айналадағы ересектерге еліктеп жүріп біле бастаймыз.</span> <span class="s">Ананың ақ сүтіндей бойымызға біртіндеп сіңіреміз.</span> <span class="s">Өзіміз өскен сайын халықтан, мектептен, кітаптан, газет-журналдардан, радио-теледидар мен кино, театрдан үйреніп, ана тілін тереңірек біле береміз.</span></p>
+      <p style="margin:0 0 12px"><span class="s">Ол – біздің өмір бойы өзгелермен ұғынысатын негізгі қатынас құралымыз.</span></p>
+      <p style="margin:0 0 12px"><span class="s">Әр халықтың басынан кешкен тарихы, ерлік істері, аңыз-ертегілері, шығарған өлең-жырлары, жазған кітаптары, табиғат пен қоғам құбылыстары атаулары, көрген-білген жалпы дүние жайындағы ұғымдары, ойы, сезімі – бәрі де ана тілінде сақталады.</span> <span class="s">Ана тілі арқылы атадан балаға ауысып отырады.</span></p>
+      <p style="margin:0 0 12px"><span class="s">Тіл – бүкіл халықтың игілігі, халықпен бірге жасап, бірге дамиды.</span> <span class="s">Ана тілін жетік білу үшін жас кезіңнен халық ауыз әдебиетін – ертегілерді, аңыздарды, өлең-жыр, дастандарды, мақал-мәтел, жұмбақ, жаңылтпаштарды естіп, тыңдап, көп оқу керек, халықтың өзінен, ұлы ақын-жазушыларымыздың шығармаларынан үйренуің керек.</span></p>
+      <p style="margin:0;font-size:.8em;color:var(--ink2);font-style:italic">(«Ол кім? Бұл не?» кітабынан)</p>
+    </div>
     <div class="pyr" id="pyr">
-      <div class="lvl"><b>ҚАТЫСУШЫЛАР<small>Кімдер?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Студенттер мен жұмысшы жастар</div></div>
-      <div class="lvl"><b>ОРЫН<small>Қайда?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Алматыдағы Брежнев атындағы алаң</div></div>
-      <div class="lvl"><b>УАҚЫТ<small>Қашан?</small></b><input placeholder="Жауабыңыз…"><div class="ans">1986 жылғы 17–18 желтоқсан</div></div>
-      <div class="lvl"><b>СЕБЕП / МӘСЕЛЕ<small>Наразылық неге туды?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Д. Қонаевтың орнына Г. Колбин республика жұртшылығының пікірімен санаспай тағайындалды</div></div>
-      <div class="lvl"><b>НӘТИЖЕ<small>Оқиға немен аяқталды?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Наразылық күшпен таратылды; жастар ұсталып, оқудан шығарылды, жұмыстан босатылды, жауапқа тартылды. Кейін оқиға тәуелсіздікке ұмтылудың маңызды кезеңі ретінде танылды</div></div>
+      <div class="lvl"><b>ТАҚЫРЫП<small>Ана тілі дегеніміз не?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Атаның, ананың, туған халқының тілі</div></div>
+      <div class="lvl"><b>ҚАЙНАРЫ<small>Ана тілін кімнен, қайдан үйренеміз?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Әке-шешеден, әже мен атадан, ересектерден; кейін халықтан, мектептен, кітаптан, газет-журнал, радио-теледидар, кино мен театрдан</div></div>
+      <div class="lvl"><b>ҚЫЗМЕТІ<small>Ана тілі біз үшін не?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Өмір бойы өзгелермен ұғынысатын негізгі қатынас құралы</div></div>
+      <div class="lvl"><b>МАҢЫЗЫ<small>Ана тілінде не сақталады?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Халықтың тарихы, ерлік істері, аңыз-ертегілері, өлең-жырлары, кітаптары, ұғымдары, ойы мен сезімі; олар атадан балаға ауысады</div></div>
+      <div class="lvl"><b>ҚОРЫТЫНДЫ<small>Ана тілін жетік білу үшін не істеу керек?</small></b><input placeholder="Жауабыңыз…"><div class="ans">Жастайынан ауыз әдебиетін (ертегі, аңыз, жыр, мақал-мәтел, жұмбақ, жаңылтпаш) тыңдап, көп оқу; халықтан және ұлы ақын-жазушылардың шығармаларынан үйрену</div></div>
     </div>
     <div class="actions"><button class="btn ghost" id="pyrShow">Үлгі жауапты көрсету</button></div>
-    <div class="note"><span>📝</span><div><b>Оқушы өнімі:</b> Желтоқсан оқиғасын бес тірек бойынша қысқа әрі жүйелі мазмұндау.</div></div>
+    <div class="note"><span>📝</span><div><b>Топ өнімі:</b> «Ана тілі» мәтінін бес тірек бойынша қысқа әрі жүйелі мазмұндау.</div></div>
+  </div>
+</section>
+
+<section class="sec" id="task-2" data-nav="2-топ: Мәтінге жаңа көзқарас" data-g="ІІ бөлім · Практикум" data-qr="2-топ: «Мәтінге жаңа көзқарас»">
+  <div class="wrap">
+    <div class="task-head">
+      <div><span class="kicker">2-топ • Интерпретация</span><h2>«Мәтінге жаңа көзқарас»</h2>
+      <p class="lead" style="margin:0">Мәтінді оқып, оған жаңа қырынан қараңыз: оқиғаны басқа кейіпкердің атынан баяндаңыз немесе жағдайын, аяқталуын өзгертіңіз.</p></div>
+      <div class="qrslot"></div>
+    </div>
+    <div class="reading" style="font-size:clamp(17px,1.4vw,20px);margin-bottom:26px">
+      <p style="margin:0;color:var(--ink2);font-style:italic">2-мәтін осы жерге қойылады.</p>
+    </div>
+    <div class="arg a3"><div class="card"><div class="tag" style="color:var(--teal)">ЖАҢА НҰСҚА</div><span class="start">Мәтінді басқаша баяндасақ…</span><textarea class="field" data-l="ЖАҢА НҰСҚА"></textarea></div><div class="card"><div class="tag" style="color:#8a5d10">НЕГІЗГІ ОЙ</div><span class="start">Жаңа нұсқадағы негізгі ой…</span><textarea class="field" data-l="НЕГІЗГІ ОЙ"></textarea></div><div class="card"><div class="tag" style="color:var(--rose)">САЛЫСТЫРУ</div><span class="start">Өзгеріс мәтіннің мағынасына қалай әсер етті?</span><textarea class="field" data-l="САЛЫСТЫРУ"></textarea></div></div>
+    <div class="note"><span>📝</span><div><b>Топ өнімі:</b> мәтіннің жаңа нұсқасы және оның негізгі ойы.</div></div>
+  </div>
+</section>
+
+<section class="sec" id="task-3" data-nav="3-топ: Оқылымнан – подкастқа" data-g="ІІ бөлім · Практикум" data-qr="3-топ: «Оқылымнан – подкастқа»">
+  <div class="wrap">
+    <div class="task-head">
+      <div><span class="kicker">3-топ • Қолдану</span><h2>«Оқылымнан – подкастқа»</h2>
+      <p class="lead" style="margin:0">Мәтіндегі ақпаратты өмірлік жағдаятпен байланыстырып, 1 минуттық подкаст мәтінін құрастырыңыз.</p></div>
+      <div class="qrslot"></div>
+    </div>
+    <div class="reading" style="font-size:clamp(17px,1.4vw,20px);margin-bottom:26px">
+      <p style="margin:0;color:var(--ink2);font-style:italic">3-мәтін осы жерге қойылады.</p>
+    </div>
+    <div class="arg a3"><div class="card"><div class="tag" style="color:var(--teal)">ПОДКАСТ ТАҚЫРЫБЫ</div><span class="start">Подкастымыздың атауы…</span><textarea class="field" data-l="ПОДКАСТ ТАҚЫРЫБЫ"></textarea></div><div class="card"><div class="tag" style="color:#8a5d10">ПОДКАСТ МӘТІНІ</div><span class="start">Тыңдарман, бүгін біз…</span><textarea class="field" data-l="ПОДКАСТ МӘТІНІ"></textarea></div><div class="card"><div class="tag" style="color:var(--green)">ӨМІРЛІК КЕҢЕС</div><span class="start">Сондықтан күнделікті өмірде…</span><textarea class="field" data-l="ӨМІРЛІК КЕҢЕС"></textarea></div></div>
+    <div class="note"><span>📝</span><div><b>Топ өнімі:</b> мәтін мазмұнын өмірмен байланыстыратын 1 минуттық подкаст мәтіні; топ оны дауыстап оқып береді.</div></div>
   </div>
 </section>
 
@@ -1061,7 +1083,7 @@ return {A:A,IC:IC,orn:orn};
 <script>
 /* ---- Тікелей байланыс баптауы ---- */
 (function(){
-  var DEF_ROOM='oqu-sauat-zheltoqsan-r4t8p2';
+  var DEF_ROOM='oqu-sauat-3top-m6v2k9';
   function ls(k){try{return localStorage.getItem(k)}catch(e){return null}}
   var P=new URLSearchParams(location.search),Q=P.has('q');
   var room=(P.get('r')||(!Q&&ls('live:room'))||DEF_ROOM).replace(/[^a-zA-Z0-9_-]/g,'').slice(0,60)||DEF_ROOM;
@@ -1070,7 +1092,7 @@ return {A:A,IC:IC,orn:orn};
   if(Q)document.documentElement.classList.add('qm');
   window.liveLink=function(id){
     var b=(ls('qr:base')||location.href).split('#')[0].split('?')[0];
-    if(id==='text')id='task-1';
+    
     return b+'?q'+(room!==DEF_ROOM?'&r='+room:'')+(db?'&db='+encodeURIComponent(db):'')+'#'+id;
   };
 })();
@@ -1203,7 +1225,7 @@ function ls(k,v){try{if(arguments.length>1){v==null?localStorage.removeItem(k):l
 function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
 function toast(t){var e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(function(){e.classList.remove('on')},2200);}
 
-var SECS=[['task-1','Оқиға пирамидасы'],['case','Өмірлік жағдаят'],['reflection','Рефлексия']];
+var SECS=[['task-1','1-топ'],['task-2','2-топ'],['task-3','3-топ'],['case','Өмірлік жағдаят'],['reflection','Рефлексия']];
 var OPTN={'Ш':'ШЫНДЫҚ','Ж':'ЖАЛҒАН','Н':'МӘТІНДЕ АҚПАРАТ ЖОҚ'};
 var TFA=$$('#tf .tf-row').map(function(r){return r.dataset.a});
 var TFT=$$('#tf .tf-row .txt').map(function(t){return t.textContent});
@@ -1255,11 +1277,6 @@ if(Q){
   qt.appendChild(tabs);
   var main=$('#main');main.insertBefore(head,main.firstChild);
 
-  // Ортақ мәтінді 1-2-тапсырмаларға қосу
-  var rd=$('#text .reading');
-  ['task-1'].forEach(function(id,i){var d=el('details','qtext');if(i===0)d.open=true;d.appendChild(el('summary',null,'📖 Ортақ мәтін: «1986 жылғы Желтоқсан оқиғасы»'));
-    var c=rd.cloneNode(true);c.classList.remove('hl-able','reveal-up');d.appendChild(c);var th=$('#'+id+' .task-head');th.parentNode.insertBefore(d,th.nextSibling);});
-
   // Жобаны сақтау (бет жаңарса да жоғалмайды)
   SECS.forEach(function(s){var sec=$('#'+s[0]);if(!sec)return;
     $$('input:not([type=checkbox]),textarea',sec).forEach(function(f,i){if(f.closest('.qtext'))return;var k='q:d:'+s[0]+':'+i,v=ls(k);if(v)f.value=v;f.addEventListener('input',function(){ls(k,f.value)})});});
@@ -1267,7 +1284,7 @@ if(Q){
     $$('.opt',row).forEach(function(b){b.addEventListener('click',function(){ls('q:d:tf:'+i,b.dataset.v)})});});
 
   function label(f,sid){var l=f.closest('.lvl');if(l)return l.querySelector('b').firstChild.textContent.trim();
-    if(sid==='task-3')return (f.placeholder||'').replace('…','');
+    if(f.dataset.l)return f.dataset.l;
     var c=f.closest('.card');if(!c)return '';var h=$('h3,.tag',c);if(h)return h.textContent.trim();
     return c.textContent.replace(/\s+/g,' ').trim();}
   function collect(id){var sec=$('#'+id),m={v:1,s:id,sid:sid,n:nameIn.value.trim(),t:Date.now(),a:[]};
